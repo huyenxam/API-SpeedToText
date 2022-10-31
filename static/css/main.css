@@ -1,0 +1,33 @@
+#body {
+  background-color: #edfbfd;
+}
+
+#main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#stopRecord {
+  display: none;
+}
+
+#recordedAudio {
+  margin-top: 10px;
+}
+
+#div_upload {
+  text-align: center;
+}
+
+#result_greedy,
+#result_beamlm {
+  color: mediumseagreen;
+}
+
+footer {
+  padding-bottom: 10px;
+}
+
+.predict-content{
+  padding: 0 50px 0 50px;
+}
