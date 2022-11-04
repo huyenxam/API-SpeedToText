@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from flask_cors import CORS
+from preprocessing_audio import preprocessing
 
 app = Flask(__name__, static_url_path="/static", static_folder='./static')
 CORS(app)
@@ -15,13 +16,19 @@ def predic_upload():
         _file = request.files['file']
         if _file.filename == '':
             return render_template('index.html', predict="", error="File không hợp lệ")
-            
+        
+        # Lưu file vừa tải lên
         print('\n\nfile uploaded:',_file.filename)
-        _file.save('static/upload/' + _file.filename)
+        _file.save('./static/upload/' + _file.filename)
         print('Write file success!')
 
+        # Audio preprocessing
+        audio_path='./static/upload/' + _file.filename
+        # Hàm preprocessing trả về một set(danh sách các đường dẫn file được tách file/30s)
+        audios = preprocessing("./static/upload/", audio_path)
+        # print(audio_paths)
+
         # model dự đoán
-        audio_path='static/upload/' + _file.filename
         predict = "Nguyen Thi Ngoc Huyen"
 
     return render_template('index.html', predict=predict, audio_path=audio_path)
