@@ -1,6 +1,7 @@
 API-SpeedToText
 ## Cấu trúc thư mục
-<p>
+
+```bash
 ---API_S2T
 |	|--- static
 |	|	|---css
@@ -15,7 +16,7 @@ API-SpeedToText
 |	|---api.zip
 |	|---flask_app.py
 |	|---model.py
-</p>
+```
 
 ## Câu lệnh thực thi
 
@@ -24,6 +25,6 @@ python .\flask_app.py
 ```
 
 ## Demo
-<video controls>
-  <source src="./static/video/video.mp4" type="video/mp4">
-</video>
+<p float="left" align="center">
+    <img width="600" src="./static/video/video.mp4" />  
+</p>
