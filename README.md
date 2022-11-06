@@ -26,5 +26,5 @@ python .\flask_app.py
 
 ## Demo
 <p float="left" align="center">
-    <img width="600" src="./static/video/video.mp4" />  
+    <video width="600" src="./static/video/video.mp4" />  
 </p>
