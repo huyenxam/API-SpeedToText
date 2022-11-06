@@ -9,8 +9,6 @@ API-SpeedToText
 |	|	|---js
 |	|	|	|---scripts.js
 |	|	|---uploads
-|	|	|---video
-|	|	|	|---video.mp4
 |	|---templates
 |	|	|---index.html
 |	|---api.zip
@@ -25,6 +23,5 @@ python .\flask_app.py
 ```
 
 ## Demo
-<p float="left" align="center">
-    <video width="600" src="./static/video/video.mp4" />  
-</p>
+https://user-images.githubusercontent.com/82708060/200175857-01e6e77b-9f91-44ff-8d41-870df247eba0.mp4
+
