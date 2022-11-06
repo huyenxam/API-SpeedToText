@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 from flask_cors import CORS
-from preprocessing_audio import preprocessing
+# from preprocessing_audio import preprocessing
 from time import sleep
 
 app = Flask(__name__, static_url_path="/static", static_folder='./static')
@@ -26,7 +26,7 @@ def predic_upload():
         # Audio preprocessing
         audio_path='./static/upload/' + _file.filename
         # Hàm preprocessing trả về một set(danh sách các đường dẫn file được tách file/30s)
-        audios = preprocessing("./static/upload/", audio_path)
+        # audios = preprocessing("./static/upload/", audio_path)
         # print(audio_paths)
 
         
