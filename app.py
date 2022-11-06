@@ -14,6 +14,7 @@ def index():
 def predic_upload():
     print('upload file')
     if request.method == 'POST':
+        # Lấy dữ liệu âm thanh người dùng vừa tải lên
         _file = request.files['file']
         if _file.filename == '':
             return render_template('index.html', predict="", error="File không hợp lệ")
